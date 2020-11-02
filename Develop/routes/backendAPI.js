@@ -44,7 +44,7 @@ module.exports =function (app) {
               {$push: {exercises: body}},
               { new: true, runValidators: true}).then(dbWorkout => {
                   res.json(dbWorkout);
-              })..catch(err => {
+              }).catch(err => {
                 res.status(400).json(err);
               });
             });

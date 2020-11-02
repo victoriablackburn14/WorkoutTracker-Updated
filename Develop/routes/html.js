@@ -4,7 +4,7 @@ const path= require("path");
 
 
   router.get("/index", (req, res) =>{
-    console.log("lskdjklsjdkl")
+    console.log("home page")
     res.sendFile(path.join(__dirname, "../public/index.html"));
     console.log("exercise page")
   });
